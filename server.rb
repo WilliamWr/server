@@ -1,10 +1,11 @@
 require 'sinatra'
 
 get '/' do
-  "Hello World"
+  Filenew("public/hello.txt").readlines
 end
 
-get '/wyncode' do
-  "<strong>Hello</strong><em>world</em>"
 
-end
+# get '/' do
+#   "<strong>Hello</strong><em>world</em>"
+#
+# end
